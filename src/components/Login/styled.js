@@ -10,10 +10,17 @@ const Wrapper = styled.div`
 
 const RegistrationWpapper = styled.div`
   width: 300px;
-  height: 300px;
 `;
-
+const ErrorLogin = styled.p`
+  color: red;
+  margin: 0;
+`;
+const WrapperPadding = styled.div`
+  padding-top: 10px;
+`;
 export default {
   Wrapper,
   RegistrationWpapper,
+  ErrorLogin,
+  WrapperPadding,
 };

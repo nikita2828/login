@@ -1,13 +1,13 @@
-import Registration from "./components/login/login";
-import Home from "./components/home/home";
+import Login from "./components/Login/index";
+import Home from "./components/Home/index";
+import NotFound from "./components/NotFound/index";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import NotFound from "./components/notfound/notfound";
-function App() {
+function RouterComponent() {
   return (
     <div>
       <BrowserRouter>
         <Switch>
-          <Route path="/login" component={Registration} />
+          <Route path="/login" component={Login} />
           <Route exact path="/" component={Home} />
           <Route path="*" component={NotFound} />
         </Switch>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default RouterComponent;

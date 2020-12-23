@@ -9,8 +9,9 @@ const Wrapper = styled.div`
 `;
 
 const WrapperBtn = styled.div`
-  float: right;
-  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export default { Wrapper, WrapperBtn };

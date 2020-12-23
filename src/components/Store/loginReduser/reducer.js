@@ -1,18 +1,18 @@
-import { USERSUCCESS, USERLOGOUT } from "./constants";
+import { USER_LOGIN, USER_LOGOUT } from "./constants";
 const initialState = {
   email: "admin",
   password: "admin",
   isLogin: false,
 };
 
-const Reducer = (state = initialState, action) => {
+const UserReducer = (state = initialState, action) => {
   switch (action.type) {
-    case USERSUCCESS:
+    case USER_LOGIN:
       return {
         ...state,
         isLogin: true,
       };
-    case USERLOGOUT:
+    case USER_LOGOUT:
       return {
         ...state,
         isLogin: false,
@@ -24,4 +24,4 @@ const Reducer = (state = initialState, action) => {
       };
   }
 };
-export default Reducer;
+export default UserReducer;

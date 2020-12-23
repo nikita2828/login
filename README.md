@@ -1,2 +1,0 @@
-- add combine reducer
-- add logger middelware
